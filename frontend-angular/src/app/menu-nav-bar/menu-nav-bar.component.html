@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">Navbar</a>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/"><fa-icon [icon]="['fas', 'home']"/> Home</a>
+                </li>
+
+                <li ngbDropdown class="nav-item">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="fileDropdown" role="button" href="#">File</a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="fileDropdown">
+                        <a class="dropdown-item" href="#">Explore lessons</a>
+                        <a class="dropdown-item" href="#">Import...</a>
+                        <a class="dropdown-item" href="#">New...</a>
+                        <a class="dropdown-item" href="#">Export...</a>
+                        <a class="dropdown-item" routerLink="/lesson-edit-form">Lesson edit form...</a>
+                    </div>
+                </li>
+  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Study Now</a>
+                </li>
+  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Progress Statistics</a>
+                </li>
+  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Achievements</a>
+                </li>
+  
+                <li ngbDropdown class="nav-item dropdown">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="helpDropdown" role="button" href="#">Help</a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="helpDropdown">
+                        <a class="dropdown-item" href="#">Glossary</a>
+                        <a class="dropdown-item" href="#">Documentation</a>
+                        <a class="dropdown-item" href="#">About</a>
+                    </div>
+                </li>
+
+                <li ngbDropdown class="nav-item dropdown">
+                    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="profileDropdown" role="button" href="#">Profile</a>
+                    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="profileDropdown">
+                        <a class="dropdown-item" href="#">Logout</a>
+                        <a class="dropdown-item" href="#">Login</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/test-page1">Test page1</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>  

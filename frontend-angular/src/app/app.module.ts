@@ -24,6 +24,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { NumberDisplayComponent } from './number-display/number-display.component';
 import { NumberStepsComponent } from './number-steps/number-steps.component';
 import { NumberEditComponent } from './number-edit/number-edit.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { NumberEditComponent } from './number-edit/number-edit.component';
     NumberDisplayComponent,
     NumberStepsComponent,
     NumberEditComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

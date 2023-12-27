@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { LoginComponent } from "./login/login.component"; // Importez le composant de la page de connexion
 import { LessonEditFormComponent } from "./lesson-edit-form/lesson-edit-form.component";
 import { LessonListPageComponent } from "./lesson-list-page/lesson-list-page.component";
 import { LessonDetailPageComponent } from "./lesson-detail-page/lesson-detail-page.component";
@@ -11,6 +11,7 @@ const routes: Routes = [
   { path:'lesson-list', component: LessonListPageComponent },
   { path:'lesson/:id', component: LessonDetailPageComponent },
   { path:'test-page1', component: TestPage1Component },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
